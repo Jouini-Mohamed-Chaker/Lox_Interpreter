@@ -41,7 +41,7 @@ public class Scanner {
     }
 
     List<Token> scanTokens() {
-        while (isAtEnd()) {
+        while (!isAtEnd()) {
             start = current;
             scanToken();
         }
@@ -207,7 +207,7 @@ public class Scanner {
     }
 
     private boolean isAlpha(char c) {
-        return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || c == '_')
+        return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || c == '_');
     }
 
     private boolean isAlphaNumeric(char c) {
@@ -232,6 +232,6 @@ public class Scanner {
 
     private void addToken(TokenType type, Object literal) {
         String text = source.substring(start, current);
-        tokens.add(new Token(type, text, literal, line))
+        tokens.add(new Token(type, text, literal, line));
     }
 }
