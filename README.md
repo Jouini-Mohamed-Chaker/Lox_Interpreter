@@ -56,7 +56,7 @@ This repository also serves as a reference for others curious about how interpre
 
 ### Prerequisites
 
-- **Java**: Ensure you have JDK installed.
+- **Java**: Ensure you have JDK +8 installed.
 - **Basic Programming Knowledge**: Familiarity with any programming language is helpful, though no prior experience with compilers is necessary.
 
 ### How to Run
